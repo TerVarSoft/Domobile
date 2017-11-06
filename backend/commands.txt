@@ -1,0 +1,24 @@
+// Since we have installed samba on the raspberrypi... sudo apt-get install samba ... hope... we can ping the machine by its hostname
+ping raspberrypi
+
+// After figuring out the ip of the raspberry, use putty to connect. User: pi Password:raspberry 
+
+// In the machine check if ngrok is running
+curl http://localhost:4040/api
+curl http://localhost:4040/api/status
+
+// Check if there is an existing tunnel
+curl http://localhost:4040/api/tunnels
+
+// If not, start domobile backend in background
+cd ~/Documents/Projects/Domobile
+node index.js &
+
+// Start ngrok in background
+cd ~/Downloads
+./ngrok http 3000 > /dev/null &
+
+// Check ngrok tunnels
+curl http://localhost:4040/api/tunnels
+
+// From this info you can figure out the url of the backend server
