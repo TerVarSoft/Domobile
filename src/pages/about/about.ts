@@ -76,10 +76,10 @@ export class AboutPage {
 
   updateBulb() {
     if (!this.isBulbOn) {
-      this.bulbImage = "./assets/imgs//pic_bulboff.gif";
+      this.bulbImage = "./assets/imgs/pic_bulboff.gif";
       this.isBulbOn = false;
     } else {
-      this.bulbImage = "./assets/imgs//pic_bulbon.gif";
+      this.bulbImage = "./assets/imgs/pic_bulbon.gif";
       this.isBulbOn = true;
     }
   }
