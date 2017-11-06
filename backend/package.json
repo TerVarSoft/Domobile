@@ -1,0 +1,19 @@
+{
+  "name": "domobile",
+  "version": "1.0.0",
+  "description": "Domotic app controlled by mobile devices",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "TerVarSoft",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "cylon": "^1.3.0",
+    "cylon-gpio": "^0.30.1",
+    "cylon-i2c": "^0.26.1",
+    "cylon-raspi": "^0.20.1",
+    "express": "^4.16.2"
+  }
+}

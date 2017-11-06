@@ -1,11 +1,17 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      About
+      Lamparas
     </ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-
+<ion-content padding style="background-color:#324954">
+  <div class="row" style="margin-top:100px">
+    <div class="col col-33"></div>
+    <div class="col col-33 col-center">
+      <img [src]="bulbImage" alt="light" (click)="lightBulb()" id="bulb" />
+    </div>
+    <div class="col col-33"></div>
+  </div>
 </ion-content>
