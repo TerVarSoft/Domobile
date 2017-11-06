@@ -22,3 +22,10 @@ cd ~/Downloads
 curl http://localhost:4040/api/tunnels
 
 // From this info you can figure out the url of the backend server
+
+
+-------------------------------------------------------------------------------------------------------
+
+Notes:
+- When closing putty use "exit" command instead of closing the window. Otherwise ngrok will be stopped.
+
